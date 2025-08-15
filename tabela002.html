@@ -11,6 +11,12 @@
 
         table{
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th.populacao-col {
+            width: 100px;
         }
 
         td, th{
@@ -21,6 +27,12 @@
         thead{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         td.numero{
@@ -58,11 +70,10 @@
             TR, TD, TH
     -->
     <table>
-        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col" class="populacao-col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -182,5 +193,4 @@
             </tr>
         </tfoot>
     </table>
-</body>
 </html>
