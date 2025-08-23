@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+      <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        col.nome{
+            background-color: aqua;
+        }
+        col.grupo{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="grupo" span="2">
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Caroline</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Caixa</td>
+        </tr>
+        <tr>
+            <td>Enéas Carneiro</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Cardiologista</td>
+        </tr>
+        <tr>
+            <td>Jair Bolsonaro</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Capitão</td>
+        </tr>
+        <tr>
+            <td>Zoey Rocha</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Programadora</td>
+        </tr>
+        <tr>
+            <td>Antony Rocha</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Jogador</td>
+        </tr>
+    </table>
+</body>
+</html>
