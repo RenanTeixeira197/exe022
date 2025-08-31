@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main h1{
+            text-align: center;
+        }
+        main{
+            width: 400;
+            height: 400;
+            margin: 50px;
+            padding: 80px;
+        }
+        section{
+            background-color: aqua;
+            margin: 4px;
+            padding: 5px;
+        }
+        body{
+            background-color: black;
+        }
+        input#clabel{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Cadastro</h1>
+            <form action="cadastro.php">
+                <p>
+                    <label for="nome"><label for="inome">Seu nome:</label></label>
+                    <input type="text" name="nome" id="inome" title="nome" class="clabel">
+                </p>
+                <p>
+                    <label for="sobrenome"><label for="isobrenome">Sobrenome:</label></label>
+                    <input type="text" name="sobrenome" id="isobrenome" title="sobrenome" class="clabel">
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
