@@ -17,16 +17,31 @@
             margin: 50px;
             padding: 80px;
         }
+
         section{
-            background-color: aqua;
-            margin: 4px;
-            padding: 5px;
+            margin: 1px;
+            color: aqua;
         }
+        p{
+            text-align: center;    
+        }
+
         body{
-            background-color: black;
+            background-color: rgb(2, 2, 2);
         }
+
         input#clabel{
             border-radius: 10px;
+        }
+
+        .quadrado{
+            width: 400px;
+            height: 200px;
+            border: 1px, solid, rgb(23, 185, 166);
+            margin: 5px;
+            border-radius: 20px;
+            border-width: 5px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -34,16 +49,26 @@
     <main>
         <section>
             <h1>Cadastro</h1>
-            <form action="cadastro.php">
-                <p>
-                    <label for="nome"><label for="inome">Seu nome:</label></label>
-                    <input type="text" name="nome" id="inome" title="nome" class="clabel">
-                </p>
-                <p>
-                    <label for="sobrenome"><label for="isobrenome">Sobrenome:</label></label>
-                    <input type="text" name="sobrenome" id="isobrenome" title="sobrenome" class="clabel">
-                </p>
-            </form>
+            <div class="quadrado">
+                <form action="formularios/cadastro.php">
+                    <p>
+                        <label for="nome"><label for="inome">Seu nome:</label></label>
+                        <input type="text" name="nome" id="inome" title="nome" class="clabel">
+                    </p>
+                    <p>
+                        <label for="sobrenome"><label for="isobrenome">Sobrenome:</label></label>
+                        <input type="text" name="sobrenome" id="isobrenome" title="sobrenome" class="clabel">
+                    </p>
+                    <p>
+                        <label for="nasc"><label for="inasc">Data de Nascimento</label></label>
+                        <input type="date" name="nasc" id="inasc" title="nascimento">
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar Dados">
+                    </p>
+                </form>
+            </div>
         </section>
     </main>
 </body>
