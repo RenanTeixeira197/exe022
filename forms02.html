@@ -26,9 +26,11 @@
         h1{
             text-align: center;
         }
+        header{
+            align-items: center;
+        }
         img{
-            display: block;
-            margin-left: auto;
+            margin-inline: 100px;
             margin-right: auto;
             width: 150px;
         }
@@ -36,7 +38,10 @@
 </head>
 <body>
     <h1>Ficha de Cadastro</h1>
-    <img src="vira-lata-caramelo.avif" alt="foto de um cachorro vira-lata">
+    <header>
+        <img src="vira-lata-caramelo.avif" alt="foto de um cachorro vira-lata">
+        <img src="retrato-de-gato-vira-lata-branco-fofo_361360-1765.jpg" alt="foto de um gato">
+    </header>
     <form action="cadastro.php">
         <fieldset>
             <legend>Dados Pessoais</legend>
@@ -62,6 +67,18 @@
         <fieldset>
             <legend>Dados do Pet</legend>
             <p>
+                <legend>Espécie</legend><br>
+                <input type="radio" name="animal" id="isdog" title="cachorro"><label for="isdog">Cachorro</label>
+
+                <input type="radio" name="animal" id="iscat" title="gato"><label for="icat">Gato</label>
+
+                <input type="radio" name="animal" id="israt"><label for="israt">Rato</label>
+                <input type="radio" name="animal" id="iave" title="ave"><label for="iave">Ave</label>
+                <input type="radio" name="animal" id="ireptil" title="reptil"><label for="ireptil">Réptil</label>
+                <input type="radio" name="animal" id="isequi" title="equino"><label for="isequi">Equino</label>
+
+            </p>
+            <p>
                 <label for="name"><label for="jnome">Nome:</label></label>
                 <input type="text" name="nome" id="jnome" required>
             </p>
@@ -72,6 +89,11 @@
             <p>
                 <label for="idade"><label for="yidade">Idade do Pet</label></label>
                 <input type="text" name="idade" id="yidade">
+            </p>
+            <p>
+                <legend>Sexo</legend>
+                <input type="radio" name="sx" id="imch"><label for="imch">Macho</label>
+                <input type="radio" name="sx" id="ifem"><label for="ifem">Fêmea</label>
             </p>
         </fieldset>
         <p>
